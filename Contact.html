@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+nav a{
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+}
+nav a:hover{
+    color: #f1356d;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    border: 2px solid #f1356d;
+    width: 70%;
+    border-radius: 15px;
+
+}
+.myForm{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    font-size: 2em;
+    margin: 20px 0;
+}
+.myForm input{
+    padding: 10px;
+    width: 100%;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+
+.myBtn{
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: 2px solid #f1356d;
+    background-color: #f1356d;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.myBtn:hover{
+    background-color: white;
+    color: #f1356d;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="http://localhost:3000/">Home</a>
+        <a href="http://localhost:3000/services">Services</a>
+        <a href="http://localhost:3000/contact">Contact</a>
+    </nav>
+    <form method="post" action="/contact">
+        <div class="myForm">
+            <label for="">Email</label>
+            <input type="email" name="email" placeholder="Exempl@gmail.com">
+        </div>
+        <div class="myForm">
+            <label for="">Subject</label>
+            <input type="text" name="msg" placeholder="message">
+        </div>
+        <div class="myForm">
+            <label for="">Message</label>
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+        </div>
+        <button class="myBtn">Send</button>
+    </form>
+</body>
+</html>

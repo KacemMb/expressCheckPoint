@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+nav a{
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+}
+nav a:hover{
+    color: #f1356d;
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+    margin: 50px 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: underline;
+}
